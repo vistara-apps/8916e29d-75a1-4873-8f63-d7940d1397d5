@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Artistic Gallery Theme - Charcoal & Vibrant Pink */
+  --color-bg: #2d2d2d;
+  --color-fg: #f5f5f5;
+  --color-accent: #ff1493;
+  --color-surface: #3a3a3a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-border: #4a4a4a;
+  --color-muted: #666666;
+}
+
+[data-theme="celo"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-accent: #fbcc5c;
+  --color-surface: #1a1a1a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-border: #333333;
+  --color-muted: #666666;
+}
+
+[data-theme="solana"] {
+  --color-bg: #1a0d2e;
+  --color-fg: #ffffff;
+  --color-accent: #9945ff;
+  --color-surface: #2a1a4a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-border: #4a3a6a;
+  --color-muted: #6a5a8a;
+}
+
+[data-theme="base"] {
+  --color-bg: #0f172a;
+  --color-fg: #f1f5f9;
+  --color-accent: #0052ff;
+  --color-surface: #1e293b;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-border: #334155;
+  --color-muted: #64748b;
+}
+
+[data-theme="coinbase"] {
+  --color-bg: #0a0e27;
+  --color-fg: #f7fafc;
+  --color-accent: #0052ff;
+  --color-surface: #1a202c;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-border: #2d3748;
+  --color-muted: #718096;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(255, 20, 147, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 20, 147, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface/80 backdrop-blur-sm border border-border/50;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-organic font-medium hover:bg-accent/90 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-fg px-6 py-3 rounded-organic font-medium hover:bg-surface/80 transition-all duration-200 border border-border;
+  }
+  
+  .btn-ghost {
+    @apply text-accent hover:bg-accent/10 px-4 py-2 rounded-lg transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply bg-surface border border-border rounded-lg px-4 py-3 text-fg placeholder-text-secondary focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all duration-200;
+  }
+  
+  .card-hover {
+    @apply hover:scale-105 hover:shadow-2xl transition-all duration-300;
+  }
+  
+  .organic-border {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  .organic-border-alt {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
