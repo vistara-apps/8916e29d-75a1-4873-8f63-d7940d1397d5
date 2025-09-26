@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Guardian Rights Card",
+    "subtitle": "Built with Zara",
+    "description": "Guardian Rights Card is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app",
+    "splashImageUrl": "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app/image.png",
+    "tagline": "Guardian Rights Card",
+    "screenshotUrls": [
+      "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app/screenshot.png",
+      "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app/api/webhook"
+  }
+}

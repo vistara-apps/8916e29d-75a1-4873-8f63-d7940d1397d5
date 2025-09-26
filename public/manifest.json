@@ -2,7 +2,7 @@
   "name": "Guardian Rights Card",
   "short_name": "Guardian",
   "description": "Your pocket legal defense and contract enforcer",
-  "start_url": "/",
+  "start_url": "https://8916e29d75a148738f63d7940d1397d5-3u6m.vercel.app",
   "display": "standalone",
   "background_color": "#2d2d2d",
   "theme_color": "#ff1493",
